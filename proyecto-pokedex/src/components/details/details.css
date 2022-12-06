@@ -24,6 +24,11 @@ h3 {
 
 .arrow-name {
   display: flex;
+  cursor: pointer;
+}
+
+.arrows {
+  cursor: pointer;
 }
 
 /* -------------------IMAGEN---------------------- */
@@ -35,7 +40,7 @@ h3 {
 } */
 
 .pokemon-photo {
-  width: 100%;
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-between;
