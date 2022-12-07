@@ -30,7 +30,9 @@ function Details(props) {
       {/* HEADER */}
       <div className="details-header">
         <div className="arrow-name">
-          <img src="/img/arrow-left.svg" alt="backArrow" className="arrows" />
+          <Link to="../">
+            <img src="/img/arrow-left.svg" alt="backArrow" className="arrows" />
+          </Link>
 
           <p>{pokemon.nombre}</p>
         </div>
@@ -73,7 +75,7 @@ function Details(props) {
             <div>
               <div className="scales">
                 <img src="/img/Weight.svg" alt="balance" />
-                <p>Kg</p>
+                <p>{pokemon.weight}</p>
               </div>
               <p> Weight</p>
             </div>
@@ -81,19 +83,16 @@ function Details(props) {
             <div>
               <div className="scales">
                 <img src="/img/Height.svg" alt="rule" />
-                <p>m</p>
+                <p>{pokemon.height}</p>
               </div>
               <p> Height</p>
             </div>
 
             <div>
-              <h5>Moves Info</h5> <p>Moves</p>
+              <h5>{pokemon.moves}</h5> <p>Moves</p>
             </div>
           </div>
-          <p>
-            Pokemon Info: Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit.
-          </p>
+          <p>{pokemon.description}</p>
         </article>
         <div>
           <h3>Base Stats</h3>
