@@ -1,38 +1,40 @@
 import React from "react";
 import { useState } from "react";
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import "./details.css";
 
 function Details(props) {
-  // const { idPokemon } = useParams();
+  const { idPokemon } = useParams();
   const [pokemon, setPokemon] = useState("");
 
-  // useEffect(() => {
-  //   fetch("http://localhost:3000/pokemons/" + idPokemon, {
-  //     method: "GET",
-  //   })
-  //     .then((response) => {
-  //       return response.json();
-  //     })
+  useEffect(() => {
+    fetch("http://localhost:3000/pokemons/", {
+      method: "GET",
+    })
+      .then((response) => {
+        return response.json();
+      })
 
-  //     .then((data) => {
-  //       setPokemon(data);
-  //     })
+      .then((data) => {
+        setPokemon(data);
+      })
 
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  const searchPokemon = data.find((pokemon) => {
+    return pokemon.id == idPokemon;
+  });
 
   return (
     <div className="details-card">
       {/* HEADER */}
       <div className="details-header">
         <div className="arrow-name">
-          <Link to="../">
-            <img src="/img/arrow-left.svg" alt="backArrow" className="arrows" />
-          </Link>
+          <img src="/img/arrow-left.svg" alt="backArrow" className="arrows" />
 
           <p>{pokemon.nombre}</p>
         </div>
