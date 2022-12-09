@@ -1,7 +1,8 @@
 {
   "pokemons": [
     {
-      "id": "001",
+      "id": 1,
+      "idd": "001",
       "imagen": "/img/bulbasaur.png",
       "color1": "#74cb48",
       "color2": "#A43E9E",
@@ -24,7 +25,8 @@
       }
     },
     {
-      "id": "004",
+      "id": 2,
+      "idd": "004",
       "imagen": "/img/charmander.png",
       "color1": "#f57d31",
       "nombre": "Charmander",
@@ -45,7 +47,8 @@
       }
     },
     {
-      "id": "007",
+      "id": 3,
+      "idd": "007",
       "imagen": "/img/squirtle.png",
       "color1": "#6493EB",
       "nombre": "Squirtle",
@@ -66,7 +69,8 @@
       }
     },
     {
-      "id": "0012",
+      "id": 4,
+      "idd": "012",
       "imagen": "/img/butterfree.png",
       "color1": "#6493EB",
       "nombre": "Butterfree",
@@ -88,7 +92,8 @@
       }
     },
     {
-      "id": "025",
+      "id": 5,
+      "idd": "025",
       "imagen": "/img/pikachu.png",
       "color1": "#F9CF30",
       "nombre": "Pikachu",
@@ -109,7 +114,8 @@
       }
     },
     {
-      "id": "092",
+      "id": 6,
+      "idd": "092",
       "imagen": "/img/gastly.png",
       "color1": "#70559B",
       "color2": "#666666",
@@ -132,7 +138,8 @@
       }
     },
     {
-      "id": "132",
+      "id": 7,
+      "idd": "132",
       "imagen": "/img/ditto.png",
       "color1": "#AAA67F",
       "nombre": "Ditto",
@@ -153,7 +160,8 @@
       }
     },
     {
-      "id": "152",
+      "id": 8,
+      "idd": "152",
       "imagen": "/img/mew.png",
       "color1": "#FB5584",
       "nombre": "Mew",
@@ -174,7 +182,8 @@
       }
     },
     {
-      "id": "304",
+      "id": 9,
+      "idd": "304",
       "imagen": "/img/aron.png",
       "color1": "#B7B9D0",
       "color2": "#B69E31",

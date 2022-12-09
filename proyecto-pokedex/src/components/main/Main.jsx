@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./main.css";
 
 function Main(props) {
@@ -6,21 +7,23 @@ function Main(props) {
     <section className="main">
       {props.arrayPokemons.map((pokemon) => {
         return (
-          <>
-            <div className="poke-card">
-              <div className="poke-id">
-                <p>#{pokemon.id}</p>
-              </div>
+          <Link to={`pokemon/${pokemon.id}`}>
+            <>
+              <div className={"poke-card"}>
+                <div className="poke-id">
+                  <p>#{pokemon.idd}</p>
+                </div>
 
-              <div className="poke-img">
-                <img src={pokemon.imagen} alt="pokemon" />
-              </div>
+                <div className="poke-img">
+                  <img src={pokemon.imagen} alt="pokemon" />
+                </div>
 
-              <div className="poke-name">
-                <p>{pokemon.nombre}</p>
+                <div className="poke-name">
+                  <p>{pokemon.nombre}</p>
+                </div>
               </div>
-            </div>
-          </>
+            </>
+          </Link>
         );
       })}
     </section>
