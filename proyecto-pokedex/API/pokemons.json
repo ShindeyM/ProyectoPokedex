@@ -73,6 +73,7 @@
       "idd": "012",
       "imagen": "/img/butterfree.png",
       "color1": "#6493EB",
+      "color2": "#A891EC",
       "nombre": "Butterfree",
       "types": {
         "type1": "Bug",

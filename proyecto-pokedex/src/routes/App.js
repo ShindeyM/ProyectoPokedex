@@ -5,11 +5,11 @@ import "./App.css";
 import Header from "../components/header/Header";
 import Searchbar from "../components/searchbar/Searchbar";
 import Main from "../components/main/Main";
-// import Details from "./components/details/Details";
 
 function App() {
   const [arrayPokemons, setArrayPokemons] = useState([]);
   const [flag, setFlag] = useState(false);
+  // const [orderAbc, setOrderAbc] = useState([]);
 
   // OBTENER DATA POKEMONS
   useEffect(() => {
@@ -39,12 +39,22 @@ function App() {
     }
   };
 
+  // ORDENAR POR ID - ALFABETICAMENTE
+
+  // const sorting = (arrayPokemons) => {
+  //   setOrderAbc(arrayPokemons.idd.sort(a, b) => a.idd > b.idd ? 1 : -1);
+  // };
+
+  //   const sorting = () => {
+  //     arrayPokemons.idd.map(str =>{return Number (str)})
+  //     .sort(a, b) => { (a.idd > b.idd ? 1 : -1) }
+  // }
+
   return (
     <div className="App">
       <Header />
       <Searchbar search={search} />
       <Main arrayPokemons={arrayPokemons} />
-      {/* <Details /> */}
     </div>
   );
 }

@@ -9,8 +9,11 @@ function Main(props) {
         return (
           <Link to={`pokemon/${pokemon.id}`}>
             <>
-              <div className={"poke-card"}>
-                <div className="poke-id">
+              <div
+                className="poke-card"
+                style={{ borderColor: pokemon.color1 }}
+              >
+                <div className="poke-id" style={{ color: pokemon.color1 }}>
                   <p>#{pokemon.idd}</p>
                 </div>
 
@@ -18,13 +21,17 @@ function Main(props) {
                   <img src={pokemon.imagen} alt="pokemon" />
                 </div>
 
-                <div className="poke-name">
+                <div
+                  className="poke-name"
+                  style={{ backgroundColor: pokemon.color1 }}
+                >
                   <p>{pokemon.nombre}</p>
                 </div>
               </div>
             </>
           </Link>
         );
+        // { "pokemon-color" = pokemon.color1 }
       })}
     </section>
   );

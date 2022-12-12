@@ -30,7 +30,7 @@ function Details(props) {
   // };
 
   return (
-    <div className="details-card">
+    <div className="details-card" style={{ backgroundColor: pokemon.color1 }}>
       {/* HEADER */}
       <div className="details-header">
         <div className="arrow-name">
@@ -74,11 +74,19 @@ function Details(props) {
       {/* SECTION DETAILS */}
       <section className="pokemon-details">
         {/* POKEMON TYPE */}
-        <div className="pokemon-type">pokemon type</div>
-
+        <div className="pokemon-type">
+          <div style={{ backgroundColor: pokemon.color1 }}>
+            {pokemon?.types?.type1}
+          </div>
+          <div style={{ backgroundColor: pokemon.color2 }}>
+            {pokemon?.types?.type2}
+          </div>
+        </div>
         {/* ABOUT */}
         <article className="about">
-          <h3 className="about-title">About</h3>
+          <h3 className="about-title" style={{ color: pokemon.color1 }}>
+            About
+          </h3>
 
           <div className="about-data">
             <div className="about-scales">
@@ -103,10 +111,11 @@ function Details(props) {
           </div>
           <p className="about-description">{pokemon?.description}</p>
         </article>
-
         {/* BASE STATS */}
         <div className="base-stats">
-          <h3 className="stats-title">Base Stats</h3>
+          <h3 className="stats-title" style={{ color: pokemon.color1 }}>
+            Base Stats
+          </h3>
           <div>
             <ul>
               <li>
@@ -146,7 +155,7 @@ function Details(props) {
                 </span>
               </li>
               <li>
-                SATK{" "}
+                SATK
                 <span className="stats-number">{pokemon?.stats?.satk}</span>
                 <span>
                   <input
@@ -159,7 +168,7 @@ function Details(props) {
                 </span>
               </li>
               <li>
-                SDEF{" "}
+                SDEF
                 <span className="stats-number">{pokemon?.stats?.sdef}</span>
                 <span>
                   <input
